@@ -1,0 +1,41 @@
+% !TEX TS-program = luatex
+% Awesome Source CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/darwiin/awesome-neue-latex-cv
+%
+% Author:
+% Christophe Roger (Darwiin)
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+
+\documentclass[localFont,alternative]{yaac-another-awesome-cv}
+ \usepackage[normalem]{ulem}
+\name{[FIRSTNAME]}{[LASTNAME]}
+\tagline{[TAGLINE]}
+\photo{2.5cm}{darwiin.png} % Using default/placeholder image
+\socialinfo{
+    \linkedin{[LINKEDIN]}
+	\smartphone{[PHONE]} \\
+	\email{[EMAIL]} || \ \address{[STREET]} || \ \address{[ZIP] [CITY]} \\
+	\infos{Staatsangehörigkeit: {[NATIONALITY]}} \infos{[YEAR], [MARITAL STATUS], [CHILDREN]} \\
+}
+      
+\begin{document}
+
+	\makecvheader
+
+	\makecvfooter
+		{\textsc{\selectlanguage{german}\today}}
+		{\textsc{[FULL NAME] - CV}}
+		{\thepage}
+
+	\input{section_Anfangstext}
+	\input{section_Kompetenzen}
+	\input{section_Praktische_Erfahrungen}
+	\input{section_Bildung}
+	\input{section_Sprachen}
+	\input{section_scholarship}
+
+\end{document}
